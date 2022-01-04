@@ -1,11 +1,10 @@
 <div align="center">
-	<h1 >Front end Entrevista TolBox</h1>
-		<img src="./img/home.png" width="800" height="400" alt="Click to see the source">
+	<h1 >Back End Entrevista TolBox</h1>
 </div>
 <div align="start">
 </br>
     <h3>Puerto de instalación</h3>
-    <small>8080</small>
+    <small>4000</small>
     <h3>Instalacion de las dependencias</h3>
     <small>npm install</small>
     <h3>Inicialización </h3>
