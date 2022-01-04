@@ -74,13 +74,13 @@ describe("GET /iecho", function () {
       });
   });
 });
-//testing peticion con 204
+//testing peticion con 200
 describe("GET /iecho", function () {
-  it("responds with word invested and returns 204 if the wors a palindrome, if it is returns 204", function (done) {
+  it("responds with word invested and returns 200 if the wors a palindrome, if it is returns 204", function (done) {
     request(app)
       .get("/iecho?text=azuza")
       .set("Accept", "application/json")
-      .expect(204)
+      .expect(200)
       .end(function (err, res) {
         if (err) {
           return done(err);

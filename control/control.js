@@ -8,6 +8,7 @@ const test = (req, res) => {
 };
 // control de la palabra ingresada
 const getWordinvested = async (req, res) => {
+  console.log(req.query)
   const word = req.query.text;
   if (word) {
     // uso del modulo para invertir la palabra
@@ -24,7 +25,7 @@ const getWordinvested = async (req, res) => {
         text: wordInvested,
       });
     } else {
-      res.status(204);
+      res.status(200);
       res.json({
         palindrome: true,
       });
