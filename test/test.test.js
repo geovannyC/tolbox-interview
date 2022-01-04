@@ -21,7 +21,6 @@ describe("test fn Async", () => {
   it("test mocha chai", async () => {
     const expected = true;
     const result = await modules.testAsync();
-    console.log(result);
     chai.expect(expected).to.equal(result);
   });
 });
@@ -38,7 +37,6 @@ describe("testing of checkPalindromeWord module", () => {
   it("Get two words, if are the same word the module returns false else return true", async () => {
     const expected = true;
     const result = await modules.checkPalindromeWord("ala", "ala");
-    console.log(result);
     chai.expect(expected).to.equal(result);
   });
 });
@@ -103,7 +101,6 @@ describe("GET /iecho", function () {
       .expect("Content-Type", /json/)
       .expect(400)
       .end(function (err, res) {
-          console.log(res.status)
         if (err) {
           return done(err);
         } else {
