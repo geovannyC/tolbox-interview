@@ -7,10 +7,26 @@ const testAsync = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
         resolve(true)
-    }, 1500);
+    }, 200);
   });
 };
+const investing = (word)=>{
+    return new Promise ((resolve, reject)=>{
+        if(typeof word === "string"){
+            resolve(word.split("").reverse().join(""))
+        }else{
+            reject(false)
+        }
+    })
+}
+const checkPalindromeWord = (word, wordInvested)=>{
+    return new Promise ((resolve, reject)=>{
+        resolve(word===wordInvested?true:false)
+    })
+}
 module.exports = {
   test,
   testAsync,
+  investing,
+  checkPalindromeWord
 };
