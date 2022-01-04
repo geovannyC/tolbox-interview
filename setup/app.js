@@ -16,3 +16,4 @@ app.use("/", paths);
 const server = http.createServer(app);
 const port = 4000;
 server.listen(port);
+module.exports = app

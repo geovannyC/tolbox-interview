@@ -1,8 +1,11 @@
+var modules = require('./modules')
+
 ;
 'use strict'
-// lógica de los middelware para las solicitudes de la api
+// control de los middelware para las solicitudes de la api
 const test = (req, res)=>{
-    res.status(200).send('Hola api')
+    res.json('hi api')
+    res.status(200)
 }
 module.exports={
     test,
